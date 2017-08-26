@@ -17,7 +17,7 @@
 <b>มีจำนวนนักเรียน <?=$num_student?> คน</b>
 <br/>
 <br/>
-เพิ่มนักเรียน
+<a href="create.php">เพิ่มนักเรียน</a>
 <br/>
 <br/>
 <table>
@@ -37,7 +37,7 @@
 	<td><?=$row['age'] ?></td>
 	<td><?=$row['tel'] ?></td>
 	<td>
-		แก้ไข
+		<a href="edit.php?id=<?=$row['id'] ?>">แก้ไข</a>
 
 		ลบ
 	</td>
