@@ -10,6 +10,7 @@ $conn = mysqli_connect($host,$username,$password,$db);
 
 if( mysqli_connect_errno() ){
 	echo "Failed to connect to MYSQL: " . mysqli_connect_error();
+	
 	die();
 }
 
