@@ -3,7 +3,7 @@
 
 	$sql = "SELECT * FROM students";
 	$query = mysqli_query($conn,$sql);
-
+	
 	$num_student = mysqli_num_rows($query);
 
 ?>
@@ -29,19 +29,20 @@
 	<th>Tel.</th>
 	<th>การจัดการ</th>
 </tr>
-
+<?php while($row = mysqli_fetch_assoc($query)) : ?>
 <tr>
-	<td>ID</td>
-	<td>First Name</td>
-	<td>Last Name</td>
-	<td>Age</td>
-	<td>Tel.</td>
+	<td><?=$row['id'] ?></td>
+	<td><?=$row['firstname'] ?></td>
+	<td><?=$row['lastname'] ?></td>
+	<td><?=$row['age'] ?></td>
+	<td><?=$row['tel'] ?></td>
 	<td>
 		แก้ไข
 
 		ลบ
 	</td>
 </tr>
+<?php endwhile; ?>
 </table>
 
 </body>

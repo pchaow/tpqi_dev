@@ -1,7 +1,7 @@
 <?php
 
 # 1. Declare variables for connection db.
-$host = "127.0.0.1";
+$host = "127.0.0.1"; #localhost
 $db = "student";
 $username = "root";
 $password = "";
